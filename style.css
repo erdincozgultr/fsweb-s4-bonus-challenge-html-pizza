@@ -14,6 +14,15 @@
   -webkit-text-size-adjust: 100%;
 }
 
+body {
+  margin: 0 auto;
+  padding: 0;
+  width: 70vw;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
 a {
   font-weight: 500;
   color: #646cff;
@@ -23,13 +32,46 @@ a:hover {
   color: #535bf2;
 }
 
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+header {
+  height: 80vh;
+  width: 100%;
+  background-image: url("public/assets/iteration-1/home-banner.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
+
+.stylish {
+  font-family: Satisfy;
+  font-size: 1.5rem;
+  color: #FDC913;
+  filter: contrast(90%);
+}
+
+header h1 {
+  font-family: 'Roboto Condensed';
+  font-weight: 300;
+  font-size: 4.5rem;
+  color: white;
+}
+
+header .container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.container-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+
+
 
 h1 {
   font-size: 3.2em;
@@ -44,8 +86,8 @@ h1 {
 }
 
 .logo {
-  height: 6em;
-  padding: 1.5em;
+  height: 5em;
+  padding: 1.3em;
   will-change: filter;
   transition: filter 300ms;
 }
@@ -70,7 +112,7 @@ button {
   padding: 0.6em 1.2em;
   font-size: 1em;
   font-weight: 500;
-  font-family: inherit;
+  font-family: 'Barlow';
   background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
@@ -81,6 +123,13 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+
+header .btn {
+ padding: 0.5rem 2.5rem;
+ border-radius: 1.5rem;
+ background-color: #FDC913;
+ color: black;
 }
 
 @media (prefers-color-scheme: light) {
